@@ -1,6 +1,6 @@
-
 body {
    font-family: "Arial", sans-serif;
+   margin: 0; /* Remove default margin */
  }
  
  .container {
@@ -9,14 +9,15 @@ body {
  
  .sidenav {
    height: 100%;
-   width: 0;
-   position: fixed;
+   width: 250px; /* Set a fixed width for the side navigation */
+   position: absolute; /* Change position to absolute */
    top: 0;
    left: 0;
    background-color: #111;
    overflow-x: hidden;
    transition: 0.5s;
    padding-top: 60px;
+   z-index: 2; /* Set a higher z-index to place it on top of the main content */
  }
  
  .sidenav a {
@@ -33,21 +34,24 @@ body {
  }
  
  .main {
-   margin-left: 0;
-   transition: margin-left 0.5s;
+   flex: 1; /* Allow main content to grow and take remaining space */
+   padding: 20px; /* Add padding for better spacing */
+   position: relative; /* Add relative positioning to the main content */
+   z-index: 1; /* Set a lower z-index than the side navigation */
  }
  
  .openbtn {
-   font-size: 20px; 
+   font-size: 20px; /* Decrease the size of the icon */
    cursor: pointer;
    color: #111;
-   z-index: 999;
-   margin-left: auto; 
-   margin-right: 20px; 
+   position: absolute; /* Change position to absolute */
+   top: 20px; /* Adjust top position */
+   left: 20px; /* Adjust left position */
+   z-index: 3; /* Set a higher z-index than the side navigation */
  }
  
  .small-icon {
-   font-size: 16px; 
+   font-size: 16px; /* Define smaller size */
  }
  
  .active {
