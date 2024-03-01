@@ -1,45 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/assets/css/index.css">
-   <link rel="stylesheet" href="/assets/img">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
-   <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/output.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>GoldenGate</title>
 
 </head>
+
 <body>
-  <body>
-    <div class="container">
-      <img src="" class="logo" alt="real-estate">
-      <div class="navbar">
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-          </ul>
-        </nav>
-        <button class="btn"><i class="fa-solid fa-bars"></i></button>
+  <!-- <div
+    class="blob w-[800px] h-[800px] rounded-[999px] absolute top-0 right-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-green-100 via-green-200 to-green-300">
+  </div>
+  <div
+    class="blob w-[1000px] h-[200px] rounded-full absolute bottom-0 left-0 top-0 right-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-green-200 via-yellow-100 to-green-200">
+  </div>
+  <div
+    class="blob w-[600px] h-[600px] rounded-full absolute bottom-0 left-0 top-0 right-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-green-200 via-yellow-100 to-green-300">
+  </div>
+  <div
+    class="blob w-[300px] h-[300px] rounded-full absolute bottom-[-10px] left-0 top-0 right-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-green-200 via-green-300 to-yellow-100">
+  </div>
+  <header class="z-10">
+    <nav class="navbar bg-transparent flex items-center justify-between mt-10">
+      <div class="topBar">
+        <a href="#">
+          <h1 class="text-3xl text-blue-600 font-semibold leading[80px] pl-12 md:pl-24 md:text-4xl">Green Gate</h1>
+        </a>
       </div>
-
-      <div class="row">
-        <div class="col">
-          <h1>John Doe</h1>
-          <p>lorem50
-            
-          </p>
+      <ul class="navMenu flex mr-10 leading-[80px] space-x-4 uppercase rounded">
+        <li class="hover:tracking-widest"><a href="#"
+            class="underline-none hover:underline-offset-8 hover:underline font-medium text-[17px] text-slate-800">Home</a>
+        </li>
+        <li class="hover:tracking-widest"><a href="#"
+            class="underline-none hover:underline-offset-8 hover:underline font-medium text-[17px] text-slate-800">About</a>
+        </li>
+        <li class="hover:tracking-widest"><a href="#"
+            class="underline-none hover:underline-offset-8 hover:underline font-medium text-[17px] text-slate-800">Services</a>
+        </li>
+        <li class="hover:tracking-widest"><a href="#"
+            class="underline-none hover:underline-offset-8 hover:underline font-medium text-[17px] text-slate-800">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header> -->
+  <section>
+    <!-- <div class="content1 w-full justify-center py-0 px-[60px]">
+      <div class="textBox w-full">
+        <h1 class="text-slate-900 text-8xl font-medium">John Doe</h1>
+        <p class="text-slate-800 text-6xl font-normal">Lorem ipsum dolor sit amet.</p>
+        <div class="btn-group mt-10">
+          <a href="#"
+            class="relative overflow-hidden link px-6 py-5 mt-10 bg-gradient-to-r  from-green-700 via-yellow-200 to-green-500  before:content-[''] before:w-full before:scale-x-0 before:h-full before:absolute before:top-0 before:left-0 before:rounded-2xl before:z-[-2] before:transition-transform ease-in-out before:origin-right before:duration-300 z-10 before:bg-transparent hover:before:scale-x-100 hover:before:origin-left  border-gray-900 border rounded-2xl text-gray-900">Meet
+            Agent</a>
+          <a href="#"
+            class="relative overflow-hidden link px-6 py-5 mt-10 before:content-[''] before:w-full before:scale-x-0 before:h-full before:absolute before:top-0 before:left-0 before:rounded-2xl before:z-[-2] before:transition-transform ease-in-out before:origin-right before:duration-300 z-10 before:bg-gradient-to-r from-green-700 via-yellow-200 to-green-500  hover:before:scale-x-100 hover:before:origin-left  border-gray-900 border rounded-2xl text-gray-900">Properties</a>
+        </div> -->
+    <div class="hero">
+      <div id="slide">
+        <div class="item [--img:url(/assets/img/background.jpg)]" >
+          <div class="content">
+            <div class="name">Villa</div>
+            <div class="des">Lorem ipsum dolor sit amet.</div>
+            <button>See More</button>
+          </div>
         </div>
-        <div class="col">
-
+        <div class="item [--img:url(/assets/img/villa.jpg)]">
+          <div class="content">
+            <div class="name">Villa</div>
+            <div class="des">Lorem ipsum dolor sit amet.</div>
+            <button>See More</button>
+          </div>
         </div>
+        <div class="item [--img:url(/assets/img/office.jpg)]">
+          <div class="content">
+            <div class="name">Villa</div>
+            <div class="des">Lorem ipsum dolor sit amet.</div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="item [--img:url(/assets/img/estate.jpg)]">
+          <div class="content">
+            <div class="name">Villa</div>
+            <div class="des">Lorem ipsum dolor sit amet.</div>
+            <button class="">See More</button>
+          </div>
+        </div>
+        <div class="item [--img:url(/assets/img/landing.jpg)]">
+          <div class="content">
+            <div class="name">Villa</div>
+            <div class="des">Lorem ipsum dolor sit amet.</div>
+            <button class="">See More</button>
+          </div>
+        </div>
+        <div class="item [--img:url(/assets/img/next.jpg)]">
+          <div class="content">
+            <div class="name">Villa</div>
+            <div class="des">Lorem ipsum dolor sit amet.</div>
+            <button class="">See More</button>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="next"><i class="fa-solid fa-angle-right"></i></button>
       </div>
     </div>
+    </div>
+  </section>
+  <footer class="bg-gray-900 text-gray-200 w-full">
+    <div class="container mx-auto py-14 px-6">
+      <div class="grid md:grid-cols-12 grid-cols-1 gap-7">
+        <div class="lg:col-span-4 col-span-12">
+          <a href="/" class="flex"><img class="h-12" src="/assets/img/Gold_Gate_Logo1.png" alt="log0">GoldenGate</a>
+          <p class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum dicta aliquid! Voluptatem facere magnam, harum dignissimos facilis consectetur nobis fugit, provident quia, eos rem nihil ipsam possimus praesentium iusto!</p>
+        </div>
+        <div class="lg"></div>
+      </div>
+    </div>
+  </footer>
 
 
-    <script src="/assets/js/index.js"></script>
-  </body>
+  <script src="/assets/js/index.js"></script>
 </body>
+</body>
+
 </html>
