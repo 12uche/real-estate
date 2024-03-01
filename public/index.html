@@ -12,6 +12,30 @@
 </head>
 
 <body>
+  <header class="absolute z-[9999999] w-full">
+    <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
+      <div>
+        <span class="text-2xl font-[Poppins] text-white">
+          <img src="../assets/img/Gold_Gate_Logo1.png" class="h-12 inline cursor-pointer" alt="">
+          GoldenGate
+        </span>
+      </div>
+      <ul class="text-white md:flex md:items-center z-[-1] md:z-auto md:static absolute  w-full left-0 md:w-auto">
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl hover:text-[#FFCD88] duration-500">Home</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl hover:text-[#FFCD88] duration-500">About</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl hover:text-[#FFCD88] duration-500">Services</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl hover:text-[#FFCD88] duration-500">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <section>
     <div class="hero">
       <div id="slide">
@@ -69,10 +93,69 @@
     <div class="container mx-auto py-14 px-6">
       <div class="grid md:grid-cols-12 grid-cols-1 gap-7">
         <div class="lg:col-span-4 col-span-12">
-          <a href="/" class="flex"><img class="h-12" src="/assets/img/Gold_Gate_Logo1.png" alt="log0">GoldenGate</a>
+          <a href="/" class="flex"><img class="h-12" src="../assets/img/Gold_Gate_Logo1.png" alt="log0">GoldenGate</a>
           <p class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum dicta aliquid! Voluptatem facere magnam, harum dignissimos facilis consectetur nobis fugit, provident quia, eos rem nihil ipsam possimus praesentium iusto!</p>
         </div>
-        <div class="lg"></div>
+        <div class="lg:col-span-2 md:col-span-4 col-span-12">
+          <h5 class="tracking-wide text-grey-100 font-semibold">Company</h5>
+          <ul class="list-none mt-6 space-y-2">
+            <li>
+              <a href="#" class="text-grey-300 hover:text-grey-400 transition-all duration-500 ease-in-out">About us</a>
+            </li>
+            <li>
+              <a href="#" class="text-grey-300 hover:text-grey-400 transition-all duration-500 ease-in-out">About us</a>
+            </li>
+            <li>
+              <a href="#" class="text-grey-300 hover:text-grey-400 transition-all duration-500 ease-in-out">About us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3 md:col-span-4 col-span-12">
+          <h5 class="tracking-wide text-grey-100 font-semibold">
+            important link
+          </h5>
+          <ul class="list-none space-y-2 mt-6">
+            <li>
+              <a href="#" class="hover:text-grey-400 transition-all duration-500 ease-in-out">
+                Terms&Conditon of services
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-grey-400 transition-all duration-500 ease-in-out">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-grey-400 transition-all duration-500 ease-in-out">
+                Company Details
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3 md:col-span-4 col-span-12">
+          <h5 class="tracking-wide text-grey-100 font-semibold">
+            NewsLetter
+          </h5>
+          <p class="mt-6">Sign up for our newsletter and receive latest tips via email.</p>
+          <form action="">
+            <div class="mt-3">
+              <label for="email-input">Write your email <span class="text-red-600">*</span></label>
+              <input type="email" id="email-input" class="mt-3 w-full py-2 px-3 h-10 bg-transparent rounded outline-none border boreder-grey-500 focus:border-[#FFCDA3] focus:ring-0" placeholder="name@example.com">
+            </div>
+            <input type="submit" class="py-2 px-5 tracking-wide border duration-500 text-base text-center bg-[#FFCDA3] hover:bg-[#FFCD88] border-[#FFCDA3] hover:border-[#FFCD88] text-black rounded-md w-full">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-slate-700">
+      <div class="md:text-left text-center container mx-auto py-7 px-6">
+        <p class="mb-0">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          name@gmail.com
+        </p>
       </div>
     </div>
   </footer>
