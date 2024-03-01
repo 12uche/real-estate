@@ -935,6 +935,78 @@ video {
   --img: url(/assets/img/villa.jpg);
 }
 
+.\[--img\:url\(\.\.\/assets\/img\/background\.jpg\)\] {
+  --img: url(../assets/img/background.jpg);
+}
+
+.\[--img\:url\(\.\.\/assets\/img\/villa\.jpg\)\] {
+  --img: url(../assets/img/villa.jpg);
+}
+
+.\[--img\:url\(\.\.\/assets\/img\/office\.jpg\)\] {
+  --img: url(../assets/img/office.jpg);
+}
+
+.\[--img\:url\(\.\.\/assets\/img\/estate\.jpg\)\] {
+  --img: url(../assets/img/estate.jpg);
+}
+
+.\[--img\:url\(\.\.\/assets\/img\/landing\.jpg\)\] {
+  --img: url(../assets/img/landing.jpg);
+}
+
+.\[--img\:url\(\.\.\/assets\/img\/next\.jpg\)\] {
+  --img: url(../assets/img/next.jpg);
+}
+
+.\[--img\:url\(\.\/assets\/img\/background\.jpg\)\] {
+  --img: url(./assets/img/background.jpg);
+}
+
+.\[--img\:url\(\.\/assets\/img\/villa\.jpg\)\] {
+  --img: url(./assets/img/villa.jpg);
+}
+
+.\[--img\:url\(assets\/img\/next\.jpg\)\] {
+  --img: url(assets/img/next.jpg);
+}
+
+.\[--img\:url\(assets\/img\/landing\.jpg\)\] {
+  --img: url(assets/img/landing.jpg);
+}
+
+.\[-img\:url\(\.\.\/assets\/img\/background\.jpg\)\] {
+  -img: url(../assets/img/background.jpg);
+}
+
+.\[--img\:url\(\.\.\.\.\/\/assets\/img\/landing\.jpg\)\] {
+  --img: url(....//assets/img/landing.jpg);
+}
+
+.\[--img\:url\(\.\.\/\.\.\/assets\/img\/landing\.jpg\)\] {
+  --img: url(../../assets/img/landing.jpg);
+}
+
+.\[--img\:url\(\.\.\/\.\.\/assets\/img\/next\.jpg\)\] {
+  --img: url(../../assets/img/next.jpg);
+}
+
+.\[--img\:url\(\.\.\/\.\.\/assets\/img\/estate\.jpg\)\] {
+  --img: url(../../assets/img/estate.jpg);
+}
+
+.\[--img\:url\(\.\.\/\.\.\/assets\/img\/office\.jpg\)\] {
+  --img: url(../../assets/img/office.jpg);
+}
+
+.\[--img\:url\(\.\.\/\.\.\/assets\/img\/villa\.jpg\)\] {
+  --img: url(../../assets/img/villa.jpg);
+}
+
+.\[--img\:url\(\.\.\/\.\.\/assets\/img\/background\.jpg\)\] {
+  --img: url(../../assets/img/background.jpg);
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
