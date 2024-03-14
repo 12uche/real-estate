@@ -14,18 +14,31 @@
 <body>
   <header class="absolute z-[9999999] w-full">
     <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
-      <div>
+      <div class="flex justify-between items-center">
         <span class="text-2xl font-[Poppins] text-white">
           <img src="../assets/img/Gold_Gate_Logo1.png" class="h-12 inline cursor-pointer" alt="">
           GoldenGate
         </span>
+        <span class="text-3xl cursor-pointer md:hidden block">
+          <div id="menu_icon" onclick="ToggleMenu()">
+            <button class="relative group">
+              <div class="relative flex items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-transparent ring-0 ring-[#FFCD88] hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+                <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 group-focus:-rotate-[45deg] origin-center">
+                  <div class="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group-focus:-rotate-90 group-focus:h-[1px] origin-right delay-75 group-focus:-translate-y-[1px]"></div>
+                  <div class="bg-white h-[1px] rounded"></div>
+                  <div class="bg-white h-[2px] w-1/2 rounded self-end transform transition-all duration-300 group-focus:-rotate-90 group-focus:h-[1px] origin-left delay-75 group-focus:translate-y-[1px]"></div>
+                </div>
+              </div>
+            </button>
+          </div>
+        </span>
       </div>
-      <ul class="text-white md:flex md:items-center z-[-1] md:z-auto md:static absolute  w-full left-0 md:w-auto">
+      <ul id="menu" class="text-white  md:flex md:items-center z-[-1] md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 top-[-400px] transition-all ease-in duration-500">
         <li class="mx-4 my-6 md:my-0">
           <a href="#" class="text-xl hover:text-[#FFCD88] duration-500">Home</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-[#FFCD88] duration-500">About</a>
+          <a href="#" class="text-xl hover:text-[#FFCD88] duration-500">About</a
         </li>
         <li class="mx-4 my-6 md:my-0">
           <a href="#" class="text-xl hover:text-[#FFCD88] duration-500">Services</a>
@@ -41,50 +54,50 @@
       <div id="slide">
         <div class="item [--img:url(../../assets/img/background.jpg)]" >
           <div class="content">
-            <div class="name">Villa</div>
+            <div class="name">Apartment</div>
             <div class="des">Lorem ipsum dolor sit amet.</div>
-            <button>See More</button>
+            <button class="py-2 px-5 tracking-wide border duration-500 text-base text-center bg-[#FFCDA3] hover:bg-[#FFCD88] border-[#FFCDA3] hover:border-[#FFCD88] text-black rounded-md w-[100px]">See More</button>
           </div>
         </div>
         <div class="item [--img:url(../../assets/img/villa.jpg)]">
           <div class="content">
             <div class="name">Villa</div>
             <div class="des">Lorem ipsum dolor sit amet.</div>
-            <button>See More</button>
+            <button class="py-2 px-5 tracking-wide border duration-500 text-base text-center bg-[#FFCDA3] hover:bg-[#FFCD88] border-[#FFCDA3] hover:border-[#FFCD88] text-black rounded-md w-[100px]">See More</button>
           </div>
         </div>
         <div class="item [--img:url(../../assets/img/office.jpg)]">
           <div class="content">
-            <div class="name">Villa</div>
+            <div class="name">Office</div>
             <div class="des">Lorem ipsum dolor sit amet.</div>
-            <button>See More</button>
+            <button class="py-2 px-5 tracking-wide border duration-500 text-base text-center bg-[#FFCDA3] hover:bg-[#FFCD88] border-[#FFCDA3] hover:border-[#FFCD88] text-black rounded-md w-[100px]">See More</button>
           </div>
         </div>
         <div class="item [--img:url(../../assets/img/estate.jpg)]">
           <div class="content">
-            <div class="name">Villa</div>
+            <div class="name">Estate</div>
             <div class="des">Lorem ipsum dolor sit amet.</div>
-            <button class="">See More</button>
+            <button class="py-2 px-5 tracking-wide border duration-500 text-base text-center bg-[#FFCDA3] hover:bg-[#FFCD88] border-[#FFCDA3] hover:border-[#FFCD88] text-black rounded-md w-[100px]">See More</button>
           </div>
         </div>
         <div class="item [--img:url(../../assets/img/landing.jpg)]">
           <div class="content">
             <div class="name">Villa</div>
             <div class="des">Lorem ipsum dolor sit amet.</div>
-            <button class="">See More</button>
+            <button class="py-2 px-5 tracking-wide border duration-500 text-base text-center bg-[#FFCDA3] hover:bg-[#FFCD88] border-[#FFCDA3] hover:border-[#FFCD88] text-black rounded-md w-[100px]">See More</button>
           </div>
         </div>
         <div class="item [--img:url(../../assets/img/next.jpg)]">
           <div class="content">
             <div class="name">Villa</div>
             <div class="des">Lorem ipsum dolor sit amet.</div>
-            <button class="">See More</button>
+            <button class="py-2 px-5 tracking-wide border duration-500 text-base text-center bg-[#FFCDA3] hover:bg-[#FFCD88] border-[#FFCDA3] hover:border-[#FFCD88] text-black rounded-md w-[100px]">See More</button>
           </div>
         </div>
       </div>
-      <div class="buttons">
-        <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
-        <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+      <div class="buttons text-white">
+        <button id="prev" class="text-xl hover:text-[#FFCD88] duration-500">Prev</button>
+        <button id="next" class="text-xl hover:text-[#FFCD88] duration-500">Next</i></button>
       </div>
     </div>
     </div>
@@ -103,10 +116,10 @@
               <a href="#" class="text-grey-300 hover:text-grey-400 transition-all duration-500 ease-in-out">About us</a>
             </li>
             <li>
-              <a href="#" class="text-grey-300 hover:text-grey-400 transition-all duration-500 ease-in-out">About us</a>
+              <a href="#" class="text-grey-300 hover:text-grey-400 transition-all duration-500 ease-in-out">Services</a>
             </li>
             <li>
-              <a href="#" class="text-grey-300 hover:text-grey-400 transition-all duration-500 ease-in-out">About us</a>
+              <a href="#" class="text-grey-300 hover:text-grey-400 transition-all duration-500 ease-in-out">Contact</a>
             </li>
           </ul>
         </div>
@@ -116,22 +129,22 @@
           </h5>
           <ul class="list-none space-y-2 mt-6">
             <li>
-              <a href="#" class="hover:text-grey-400 transition-all duration-500 ease-in-out">
+              <a href="../public/terms&condition.html" target="_blank" class="hover:text-grey-400 transition-all duration-500 ease-in-out">
                 Terms&Conditon of services
               </a>
             </li>
             <li>
-              <a href="#" class="hover:text-grey-400 transition-all duration-500 ease-in-out">
+              <a href="../public/privecypolicy.html" target="_blank" class="hover:text-grey-400 transition-all duration-500 ease-in-out">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="#" class="hover:text-grey-400 transition-all duration-500 ease-in-out">
+              <a href="../public/companyDetails.html" target="_blank" class="hover:text-grey-400 transition-all duration-500 ease-in-out">
                 Company Details
               </a>
             </li>
           </ul>
-        </div>
+        </div>  
         <div class="lg:col-span-3 md:col-span-4 col-span-12">
           <h5 class="tracking-wide text-grey-100 font-semibold">
             NewsLetter
